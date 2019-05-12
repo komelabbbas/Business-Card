@@ -1,0 +1,12 @@
+{
+  "name": "cardui",
+  "version": "1.0.0",
+  "description": "The Card UI Component",
+  "main": "index.js",
+  "keywords": [
+    "card",
+    "cardui"
+  ],
+  "author": "Raish Varia",
+  "license": "MIT"
+}

@@ -1,0 +1,349 @@
+/*
+ *  Version: 1.0.0
+ *  Author: Raish Varia
+ *  Github: https://github.com/raishvaria/Business-Card
+*/
+
+.card {
+    height: 320px;
+    background: rgba(156, 39, 176, 0.83);
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body .corner {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.card-body .about-company  {
+    display: flex;
+}
+
+.card-body .about-company .company-logo img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+}
+
+.card-body .about-company .company-detail { 
+    margin-left: 15px;
+}
+
+.card-body .about-company .company-detail h2 {
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.card-body .about-company .company-detail h4 {
+    margin-top: 5px;
+    color: #deb887;
+}
+
+.card-body .company-person .person-name {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.card-body .company-person .person-position {
+    color: #deb887;
+    font-size: 16px;
+}
+
+.card-body .company-location .company-address {
+    margin-top: 20px;
+    padding-top: 13px;
+    position: relative;
+}
+
+.card-body .company-location .company-address address {
+    font-size: 18px;
+    width: 70%;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.card-body .company-location .direct-contact {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.card-body .company-location .direct-contact .company-visit {
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.card-body .company-location .direct-contact .company-visit,
+.card-body .company-location .direct-contact .company-contact { 
+    padding-top: 10px;
+    position: relative;
+}
+
+.card-body .company-location .company-address::before,
+.card-body .company-location .direct-contact .company-visit::before,
+.card-body .company-location .direct-contact .company-contact::before {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background: #FF9800;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+
+/* style 1 */
+.style-1 .card-body .top-corner {
+    border-top: 250px solid #E91E63;
+    border-left: 250px solid transparent;
+    right: 0;
+    top: 0;
+    filter: drop-shadow(0px -1px 10px black);
+}
+
+.style-1 .card-body .top-inner-corner {
+    border-top: 200px solid #FF9800;
+    border-left: 200px solid transparent;
+    right: 0;
+    top: 0;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+.style-1 .card-body .bottom-corner {
+    border-bottom: 150px solid #E91E63;
+    border-left: 150px solid transparent;
+    bottom: 0;
+    right: 0;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+.style-1 .card-body .bottom-inner-corner {
+    border-bottom: 110px solid #FF9800;
+    border-left: 110px solid transparent;
+    bottom: 0;
+    right: 0;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+.style-1 .card-body .company-person {
+    display: none;
+}
+
+.style-1 .card-body .company-location {
+    margin-top: 70px;
+}
+
+
+/* style 2 */
+.style-2 .card-body .about-company {
+    position: absolute;
+    z-index: 10;
+    flex-direction: column;
+    left: 20px;
+    top: 20px;
+}
+
+.style-2 .card-body .about-company .company-detail h2 {
+    margin-top: 10px;
+}
+
+.style-2 .card-body .about-company .company-detail h4,
+.style-2 .card-body .company-person .person-position{
+    color: #795548;
+}
+
+.style-2 .card-body .company-person {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 30px;
+}
+
+.style-2 .card-body {
+    padding-left: 350px;
+}
+
+.style-2 .card-body .company-location .company-address address {
+    width: 100%;
+    text-align: justify;
+}
+
+.style-2 .card-body .company-location {
+    padding-top: 30px;
+}
+
+.style-2 .card-body .company-location .direct-contact {
+    flex-direction: column;
+}
+
+.style-2 .card-body .company-location .direct-contact .company-visit {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.style-2 .card-body .left-side {
+    width: 40%;
+    border-bottom: 320px solid #E91E63;
+    border-right: 120px solid transparent;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+.style-2 .card-body .left-outer-side {
+    width: 35%;
+    border-bottom: 320px solid #FF9800;
+    border-right: 120px solid transparent;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+
+/* style 3 */
+.style-3 .card-body .top-corner {
+    border-top: 150px solid #E91E63;
+    border-right: 150px solid transparent;
+    left: 0;
+    top: 0;
+    filter: drop-shadow(0px -1px 10px black);
+}
+
+.style-3 .card-body .top-inner-corner {
+    border-top: 110px solid #FF9800;
+    border-right: 110px solid transparent;
+    left: 0;
+    top: 0;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+.style-3 .card-body .bottom-corner {
+    border-bottom: 250px solid #E91E63;
+    border-right: 250px solid transparent;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+.style-3 .card-body .bottom-inner-corner {
+    border-bottom: 210px solid #FF9800;
+    border-right: 210px solid transparent;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+.style-3 .card-body {
+    margin-left: 150px;
+}
+
+.style-3 .card-body .company-person {
+    display: none;
+}
+
+.style-3 .card-body .company-location {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.style-3 .card-body .company-location .company-address {
+    margin-top: 5px;
+}
+
+.style-3 .card-body .company-location .company-address address {
+    width: 100%;
+}
+
+.style-3 .card-body .company-location .direct-contact {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.style-3 .card-body .company-location .direct-contact .company-visit{
+    margin: 0;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+/* style 4 */
+.style-4 .card-body .top-corner {
+    border-top: 150px solid #E91E63;
+    border-left: 150px solid transparent;
+    right: 0;
+    top: 0;
+    filter: drop-shadow(0px -1px 10px black);
+}
+
+.style-4 .card-body .top-inner-corner {
+    border-top: 110px solid #FF9800;
+    border-left: 110px solid transparent;
+    right: 0;
+    top: 0;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+.style-4 .card-body .bottom-corner {
+    border-bottom: 240px solid #E91E63;
+    border-right: 230px solid transparent;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 14px black);
+}
+
+.style-4 .card-body .bottom-inner-corner {
+    border-bottom: 200px solid #FF9800;
+    border-right: 190px solid transparent;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+.style-4 .card-body {
+    padding-left: 50px;
+}
+
+.style-4 .card-body .about-company .company-logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.style-4 .card-body .company-person {
+    margin-left: 107px;
+}
+
+.style-4 .card-body .company-person h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.style-4 .card-body .company-person .person-position {
+    font-size: 14px;
+}
+
+.style-4 .card-body .company-location {
+    margin-top: 45px;
+}
+
+.style-4 .card-body .company-location .company-address {
+    margin-left: 178px;
+}
+
+.style-4 .card-body .company-location .company-address address{
+    width: 100%;
+}
+
+.style-4 .card-body .company-location .direct-contact {
+    margin-left: 178px;
+}
