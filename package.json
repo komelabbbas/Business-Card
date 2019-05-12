@@ -1,11 +1,12 @@
 {
-  "name": "cardui",
+  "name": "business-card-ui",
   "version": "1.0.0",
-  "description": "The Card UI Component",
+  "description": "The Business Card UI Component",
   "main": "index.js",
   "keywords": [
     "card",
-    "cardui"
+    "cardui",
+    "Business card"
   ],
   "author": "Raish Varia",
   "license": "MIT"
